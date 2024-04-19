@@ -1,0 +1,604 @@
+:root {
+  --pink: #fff;
+  --bg: #0a0a0a;
+  --blue: #4995D1;
+  --yellow: #F1B704;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+@font-face {
+  font-family: 'StylishCalligraphy';
+  src: url('fonts/StylishCalligraphy.ttf') format('truetype');
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  background-color: var(--blue);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/landing.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero h3,
+.hero p span {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: 'StylishCalligraphy', cursive;
+  font-size: 4.2rem;
+}
+
+.hero .details {
+  margin-top: 8rem;
+  color: #0a0a0a;
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero h5 {
+  font-size: 1rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero .details p, h4, h5 {
+  color: #0a0a0a;
+}
+
+.hero a {
+  color: var(--blue);
+  background-color: white;
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+}
+
+.hero a:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.hero svg {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 10vh;
+}
+
+/* .mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'StylishCalligraphy', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+} */
+
+.navbar-nav.ms-auto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  gap: 4rem;
+  /* Mengatur agar konten berada di tengah vertikal */
+}
+
+.navbar-nav.ms-auto i {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  /* Mengatur agar konten berada di tengah vertikal */
+}
+
+.mynavbar .nav-link {
+  /* text-transform: uppercase; */
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+.home {
+  background-image: url('img/home.png');
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 0rem;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  background-position: center;
+}
+
+.home h1 {
+  font-family: 'StylishCalligraphy', cursive;
+  font-size: 4.2rem;
+}
+
+.home h1,
+.home h3,
+.home p {
+  color: #fff;
+}
+
+.simply-countdown {
+  margin-top: 16rem;
+  border: #4995D1;
+  color: var(--blue);
+}
+
+.simply-section {
+  background-color: #fff !important;
+  border-radius: 24px;
+}
+
+.info {
+  background-image: url('img/info-new.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #0a0a0a;
+}
+
+.info h2,
+.info h2,
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+  color: var(--pink);
+  font-family: 'Sacramento';
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.info h3 {
+  color: #0a0a0a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: #0a0a0a;
+  margin: auto;
+  width: 80%;
+}
+
+.info .couple {
+  margin-top: 2.4rem;
+  text-align: center;
+  width: 100%;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.info .couple h4 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.info .couple img {
+  margin-top: 2rem;
+  width: 40%;
+  height: 40%;
+}
+
+.info strong {
+  display: block;
+}
+
+.info .heart {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.info .heart svg {
+  margin: auto;
+  color: var(--pink);
+}
+
+.event {
+  background-image: url('img/akad.png');
+  color: white;
+  background-position: center;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.event h2 {
+  font-weight: 600;
+}
+
+.event .alamat {
+  font-size: 1.1rem;
+}
+
+.event .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.event .akad {
+  margin-left: 0rem;
+}
+
+.event .resepsi {
+  margin-left: 8rem;
+}
+
+.event .card {
+  background-color: rgba(252, 252, 252, ) !important;
+  color: 013359 !important;
+  width: 50% !important;
+  border-radius: 24px !important;
+  border: 1px solid #999;
+}
+
+.event .card li {
+  list-style: none;
+  padding: 4px;
+  margin-left: -2rem;
+}
+
+.event .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.event .card-body {
+  font-size: 1rem;
+}
+
+.event a {
+  padding: 10px 16px 10px 16px;
+  background-color: var(--yellow);
+  border-radius: 24px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+
+.story,
+.gallery,
+.rsvp,
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+.rsvp {
+  background-color: var(--blue);
+  padding-top: 4rem;
+}
+
+.rsvp h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 8px;
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp .card {
+  background-color: rgba(123, 197, 255, 0.5);
+  border: solid;
+  box-shadow: var(--shadow);
+  border-color: white;
+  border-radius: 40px;
+}
+
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp form input,
+.rsvp form textarea,
+.rsvp form select {
+  border-radius: 24px;
+}
+
+.rsvp svg {
+  margin-right: 8px;
+}
+
+.rsvp button {
+  background-color: var(--yellow);
+  color: white;
+  border-radius: 24px;
+  padding: 8px 24px 8px 24px;
+  border: 1px solid var(--yellow);
+  box-shadow: var(--shadow);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: var(--yellow);
+  border: 1px solid white;
+}
+
+.gifts {
+  background-image: url('img/nasehat.png');
+  color: white;
+  background-size: cover;
+  background-position: center;
+  padding-top: 1rem;
+  height: 100vh;
+}
+
+.gifts .container {
+  width: 80%;
+}
+
+.gifts h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.gifts .card {
+  padding: 24px;
+  margin-top: 2rem;
+  border-radius: 24px;
+}
+
+.gifts .card-footer {
+  background-color: #fff;
+  padding-bottom: 0px;
+}
+
+.gifts .card-footer p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+footer {
+  padding: -4rem;
+  margin-bottom: 4.4rem;
+  background-color: none;
+  color: white;
+}
+
+footer p {
+  font-size: medium;
+}
+
+footer .card {
+  height: 3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+  margin-top: -3rem;
+  background-color: rgba(255, 254, 254, 0.62);
+  border: solid 1px #4995d1;
+  border-radius: 20px 20px 0 0;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  top: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --blue: #007bff; /* Warna biru */
+  }
+
+  .hero button {
+    color: var(--blue); /* Warna teks biru */
+    background-color: white; /* Warna latar putih */
+    box-shadow: var(--shadow); /* Efek bayangan */
+    border-radius: 24px; /* Sudut border */
+  }
+}
+
+/* Media Query */
+/* Extra large */
+@media (max-width: 1200px) {
+  .info .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown>.simply-section {
+    padding: 70px;
+  }
+
+  .info .heart {
+    display: none;
+  }
+
+  .info .couple img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .event {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .event .akad {
+    margin: auto;
+  }
+
+  .event .resepsi {
+    margin: auto;
+  }
+
+  .event .card {
+    width: 80% !important;
+  }
+
+  .event .card-header {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .hero .details {
+    margin-top: 32rem;
+  }
+
+  .simply-countdown {
+    margin-top: 32rem;
+  }
+
+  .simply-countdown>.simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .hero .details {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    color: #0a0a0a;
+  }
+
+  .navbar-nav.ms-auto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    font-size: 0;
+    gap: 4rem;
+    padding: 4px;
+    /* Mengatur agar konten berada di tengah vertikal */
+  }
+
+  .navbar-nav.ms-auto a span{
+    font-size: 0;
+  }
+  .simply-countdown>.simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+
+}
